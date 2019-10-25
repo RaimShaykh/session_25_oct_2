@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@font-face{font-family: 'Raleway'; src: url("../fonts/raleway/Raleway-Thin.ttf") format("truetype"); font-weight:100}
+@font-face{font-family: 'Raleway'; src: url("../fonts/raleway/Raleway-ExtraLight.ttf") format("truetype"); font-weight:200}
+@font-face{font-family: 'Raleway'; src: url("../fonts/raleway/Raleway-Light.ttf") format("truetype"); font-weight:300}
+@font-face{font-family: 'Raleway'; src: url("../fonts/raleway/Raleway-Regular.ttf") format("truetype"); font-weight:400}
+@font-face{font-family: 'Raleway'; src: url("../fonts/raleway/Raleway-Medium.ttf") format("truetype"); font-weight:500}
+@font-face{font-family: 'Raleway'; src: url("../fonts/raleway/Raleway-SemiBold.ttf") format("truetype"); font-weight:600}
+@font-face{font-family: 'Raleway'; src: url("../fonts/raleway/Raleway-Bold.ttf") format("truetype"); font-weight:700}
+@font-face{font-family: 'Raleway'; src: url("../fonts/raleway/Raleway-ExtraBold.ttf") format("truetype"); font-weight:800}
+@font-face{font-family: 'Archive'; src: url("../fonts/Archive.otf") format("opentype"); font-weight:400}
+
+body{
+position: relative;
+width: 100vw;
+overflow-x: hidden;
+}
+
+
+
+p {
+  font-family: Noto Sans;
+  color: #8A8FA3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  color: #262835;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0.03em;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 800;
+
+}
+
+.bigpg {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 200;
+  letter-spacing: 0.02em;
+}
+
+.firstscreen {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.firstscreen #firsttext {
+  letter-spacing: 0.05em;
+  position: absolute;
+  left: 127px;
+  top: 123px;
+  color: #A6ADC6;
+}
+
+.firstscreen h2 {
+  padding: 344px 0 0 127px;
+  width: 486px;
+
+  word-wrap: break-word;
+}
+
+.firstscreen .bigpg {
+  padding: 24px 0  0 128px;
+  width: 390px;
+  word-wrap: break-word;
+}
+
+.firstscreen .imgfon {
+  position: absolute;
+  left: 1158px;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/ellipse10.svg);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.checklist {
+  position: fixed;
+  top: 222px;
+  left: 1000px;
+  width: 460px;
+  height: 532px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 50px 200px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+}
+
+.checkbox {
+	border-radius: 3px;
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0px 0px 0px 80px;
+	margin-top: 24px;
+	background: transparent;
+  font-size: 18px;
+  font-family: 'Raleway';
+  font-weight: 400;
+}
+
+.checkbox input[type=checkbox] {
+    display: none;
+}
+.checkbox label:before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin-right: 16px;
+	position: absolute;
+	left: -16px;
+
+    border-radius: 4px;
+    background-color: #D3D7E4;
+}
+.checkbox label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	margin-right: 15px;
+	padding: 5px 0px 0 25px;
+	color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+input[type=checkbox]:checked + label:before {
+    content: url(../img/1.svg);
+    color: #fff;
+    text-align: center;
+    background-color: #F1C44F;
+}
+
+.checkbox label {
+  margin-top: 48px;
+
+}
+
+input[type=checkbox]:checked + label {
+	color: #262626;
+}
+
+.second {
+  margin: 1000px;
+}
